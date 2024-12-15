@@ -7,7 +7,7 @@ const Navbar = () => {
   const location = useLocation();
 
   const getLinkClass = (path) =>
-    location.pathname === path ? "text-cyan-400" : "hover:text-gray-600";
+    location.pathname === path ? "text-cyan-400" : "hover:text-neutral-600";
 
   return (
     <nav className="sticky top-0 z-50 bg-white backdrop-blur-md shadow-md mb-20 flex items-center justify-between py-6 px-4 md:px-8">

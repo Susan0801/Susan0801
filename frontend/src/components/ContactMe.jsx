@@ -75,14 +75,14 @@ const ContactMe = () => {
               type="text"
               id="name"
               name="name"
-              className="w-full bg-transparent rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-black py-0.5 px-2 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-transparent rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-neutral-600 py-0.5 px-2 leading-8 transition-colors duration-200 ease-in-out"
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="Enter your name"
             />
           </div>
           <div className="relative mb-4">
-            <label htmlFor="email" className="leading-7 text-sm text-gray-400">
+            <label htmlFor="email" className="leading-7 text-sm text-neutral-600">
               Email <span className="text-red-500">*</span>
             </label>
             <input

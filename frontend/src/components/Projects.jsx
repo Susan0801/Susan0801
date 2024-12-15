@@ -21,8 +21,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="border-b border-neutral-900 pb-4 -mt-10">
-      <h1 className="my-10 text-center text-4xl">Projects</h1>
+    <div className="mb-20 -mt-2">
       <div>
         {PROJECTS.map((project, index) => {
           // Determine the direction based on index
@@ -49,10 +48,10 @@ const Projects = () => {
                 />
               </div>
               <div className="w-full max-w-xl lg:w-3/4">
-                <h6 className="mb-2 font-semibold">{project.title}</h6>
-                <p className="mb-4 text-neutral-400">{project.description}</p>
+                <h6 className="mb-2 text-neutral-600 font-semibold">{project.title}</h6>
+                <p className="mb-4 text-neutral-600">{project.description}</p>
                 {project.technologies.map((tech, techIndex) => (
-                  <span key={techIndex} className="text-sm text-cyan-400 mr-2">
+                  <span key={techIndex} className="text-sm text-cyan-500 mr-2">
                     {tech}
                   </span>
                 ))}

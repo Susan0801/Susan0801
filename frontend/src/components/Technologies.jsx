@@ -43,7 +43,7 @@ const Technologies = () => {
         </motion.div>
         
         <motion.div className="rounded-2xl border-4 border-neutral-800 p-4" variants={iconVariants}>
-          <TbBrandNextjs className="text-7xl text-black-400" />
+          <TbBrandNextjs className="text-7xl text-gray-400" />
         </motion.div>
         
         <motion.div className="rounded-2xl border-4 border-neutral-800 p-4" variants={iconVariants}>

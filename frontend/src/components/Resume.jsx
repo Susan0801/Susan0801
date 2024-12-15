@@ -28,14 +28,14 @@ const Resume = () => {
         <nav className="w-1/4 p-6 mt-20" >
           <ul className="space-y-4">
           <li
-              className="text-lg font-semibold hover:text-gray-600 cursor-pointer"
+              className="text-lg text-gray-500 font-semibold hover:text-gray-900 cursor-pointer"
               onMouseEnter={() => handleMouseEnter("Experience")}
             >
               Experience
             </li>
             
             <li
-              className="text-lg font-semibold hover:text-gray-600 cursor-pointer"
+              className="text-lg text-gray-500 font-semibold hover:text-gray-900 cursor-pointer"
               onMouseEnter={() => handleMouseEnter("Technologies")}
             >
               Technologies
@@ -43,7 +43,7 @@ const Resume = () => {
 
             
             <li
-              className="text-lg font-semibold hover:text-gray-600 cursor-pointer"
+              className="text-lg text-gray-500 font-semibold hover:text-gray-900 cursor-pointer"
               onMouseEnter={() => handleMouseEnter("Download")}
             >
               Download

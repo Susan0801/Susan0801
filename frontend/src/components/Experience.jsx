@@ -41,7 +41,7 @@ const Experience = () => {
               variants={yearVariants}
               transition={{ delay: index * 0.2 }} // Stagger each year with a delay
             >
-              <p className="mb-2 text-sm text-neutral-400">{experience.year}</p>
+              <p className="mb-2 text-sm text-neutral-600">{experience.year}</p>
             </motion.div>
             <motion.div
               className="w-full max-w-xl lg:w-3/4"
@@ -50,15 +50,15 @@ const Experience = () => {
               variants={itemVariants}
               transition={{ delay: index * 0.2 }} // Stagger each item with a delay
             >
-              <h6 className="mb-2 font-semibold">
+              <h6 className="mb-2 text-neutral-600 font-semibold">
                 {experience.role} -{" "}
-                <span className="text-sm text-purple-200">
+                <span className="text-sm">
                   {experience.company}
                 </span>
               </h6>
-              <p className="mb-4 text-neutral-400">{experience.description}</p>
+              <p className="mb-4 text-neutral-600">{experience.description}</p>
               {experience.technologies.map((tech, index) => (
-                <span key={index} className="mr-2 text-sm text-cyan-400">
+                <span key={index} className="mr-2 text-sm text-cyan-500">
                   {tech}
                 </span>
               ))}
