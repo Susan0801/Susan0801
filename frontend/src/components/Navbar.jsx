@@ -22,7 +22,7 @@ const Navbar = () => {
 
       {/* Hamburger Menu for Mobile */}
       <button
-        className="block md:hidden focus:outline-none "
+        className="block md:hidden focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle navigation menu"
       >
@@ -43,12 +43,9 @@ const Navbar = () => {
       </button>
 
       {/* Navigation Links */}
-      <div
-        className={`flex-col md:flex md:flex-row items-center gap-4 text-2xl ${
-          isOpen ? "block" : "hidden md:flex"
-        }`}
-      >
-        <ul className="flex flex-col md:flex-row gap-4">
+      {/* Desktop */}
+      <div className="hidden md:flex md:flex-row items-center gap-4 text-2xl">
+        <ul className="flex gap-4">
           <li>
             <Link
               to="/projects"
@@ -76,7 +73,63 @@ const Navbar = () => {
         </ul>
 
         {/* Social Media Links */}
-        <div className="flex flex-col md:flex-row  items-center gap-4">
+        <div className="flex flex-row items-center gap-4">
+          <a
+            href="https://www.linkedin.com/in/susan-liu-a255a516a/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit LinkedIn profile"
+            className="text-2xl hover:text-cyan-500 focus:ring-2 focus:ring-cyan-400 transition-all duration-300"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://github.com/Susan0801/portfolia.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit GitHub profile"
+            className="text-2xl hover:text-cyan-500 focus:ring-2 focus:ring-cyan-400 transition-all duration-300"
+          >
+            <FaGithubSquare />
+          </a>
+        </div>
+      </div>
+
+      {/* Mobile */}
+      <div
+        className={`${
+          isOpen ? "right-20" : "-left-full"
+        } absolute top-0 w-1/4 bg-white md:hidden z-50 transition-all duration-300`}
+      >
+        <ul className="flex flex-col items-center gap-4 py-6 text-xl">
+          <li>
+            <Link
+              to="/projects"
+              className={`text-xl font-semibold ${getLinkClass("/projects")}`}
+            >
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/resume"
+              className={`text-xl font-semibold ${getLinkClass("/resume")}`}
+            >
+              Resume
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/contact"
+              className={`text-xl font-semibold ${getLinkClass("/contact")}`}
+            >
+              Contact Me
+            </Link>
+          </li>
+        </ul>
+
+        {/* Social Media Links for Mobile */}
+        <div className="flex justify-center gap-6 py-4">
           <a
             href="https://www.linkedin.com/in/susan-liu-a255a516a/"
             target="_blank"

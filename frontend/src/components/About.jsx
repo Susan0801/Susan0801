@@ -38,7 +38,7 @@ const About = () => {
         <div className="w-full lg:w-1/2">
           <div className="flex justify-center lg:justify-start">
             <motion.p
-              className="max-w-xl font-light py-6 text-black"
+              className="max-w-xl font-light py-6 text-justify text-black"
               initial="hidden"
               animate="visible"
               variants={textVariants}

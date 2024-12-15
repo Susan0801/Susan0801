@@ -31,7 +31,7 @@ const Experience = () => {
   return (
     <div className=" pb-24">
       <h1 className="my-10 text-center text-4xl text-black">Experience</h1>
-      <div>
+      <div text-justify>
         {EXPERIENCES.map((experience, index) => (
           <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
             <motion.div
